@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.card{
+    width: 300px;
+    height: 500px;
+    background-color: azure;
+
+    margin-left:200px ;
+    margin-top: 100px;
+    border: 1px solid black;
+    box-shadow:1px 1px black;
+}
+
+.image{
+    background-image: url("image\ for\ card.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 40%;
+}
+
+.content{
+    padding: 25px 30px;
+    text-align: left;
+
+}
+.btn{
+    padding: 5px 7px;
+    margin-top: 17px;
+    font-weight: 700;
+    background-color: white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: floralwhite ;
+}
+
+
+/* cltr+shift+p=> simple browser */

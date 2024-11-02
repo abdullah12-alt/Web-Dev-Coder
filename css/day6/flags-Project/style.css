@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+
+}
+
+.main-container{
+    width: 90vw;
+    height: 90vh;
+    background-color: black;
+    display: flex;
+    
+}
+
+.container1{
+    width: 20%;
+    height:90vh;
+    background-color: white;
+
+}
+.container2{
+    width: 80%;
+    height: 90vh;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 600px;
+    height: 600px;
+   background-image: url("moon_and_star-removebg-preview.png");
+   background-position: center;
+   background-size: cover;
+   filter:brightness(0) invert(1) ;
+}

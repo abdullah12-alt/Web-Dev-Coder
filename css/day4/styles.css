@@ -1,0 +1,53 @@
+.container{
+   
+    /* justify-content: center; */
+    background-color: bisque;
+    width: 500px;
+    height: 500px;
+    /* text-align: justify; */
+
+    text-align: center;
+    border: 5px solid black;
+   
+}
+
+h1{
+    font-family: "Noto Serif Oriya", serif;
+    /* font-size: 100px; */
+    /* font-weight:600; */
+    /* font-style:inherit; */
+    /* font-display:; */
+    /* font-variant:small-caps;  */
+    /* convert the case of the text */
+    text-transform:capitalize;
+    text-shadow:5px 2px 5px red;
+    /* word-spacing: 20px; */
+
+    /* letter-spacing: 2px; */
+    /* https://www.w3schools.com/css/css_text_spacing.asp */
+ 
+
+}
+
+p{
+    /* line-height: 100px; */
+}
+span{
+    text-decoration:underline;
+}
+
+
+
+.pic{
+    border: 5px solid rgb(72, 9, 9);
+
+    margin-left: 38%;
+    margin-top: 50px;
+    background-image: url("superman.jpg");
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+}
+
