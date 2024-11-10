@@ -1,0 +1,32 @@
+You can use npm to install TypeScript globally, this means that you can use the tsc command anywhere in your terminal.
+
+To do this, run npm install -g typescript. This will install the latest version (currently 5.6).
+
+https://www.typescriptlang.org/download/
+
+
+
+cmd: 
+npm install -g typescript
+
+confirm the installation via this cmd:
+
+tsc -v
+
+
+file extention:
+.ts
+
+how ts works
+
+when we run our file with tsc file.ts
+first it will convert it into js then will run 
+
+
+
+run this cmd for running the ts in terminal 
+
+npm install -g ts-node typescript '@types/node'
+
+run your file with this cmd
+ts-node typescript-file.ts
