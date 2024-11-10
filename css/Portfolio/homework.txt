@@ -1,1 +1,4 @@
 change the content of the porfolio divs
+
+create this website from scratch ,use different content. make buttons hover
+add new page for thanks you and link it with submit button in contact form
