@@ -8,7 +8,6 @@ function parkFun(){
     window.alert("You are eligible to enter in the park")
 }
 
-
 // js tutorial link 
 
 // https://www.w3schools.com/js/js_output.asp

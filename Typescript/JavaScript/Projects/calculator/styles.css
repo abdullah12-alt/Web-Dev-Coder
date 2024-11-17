@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal-form> form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.cal-form{
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border: 2px solid rgb(190, 10, 10);
+    border-radius: 10px;
+}
+
+input{
+    padding: 7px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.inputs-field{
+    
+    display: flex;
+    flex-direction: column;
+
+}
+select{
+    padding: 8px;
+    width: 170px;
+}
+button{
+    margin-top: 20px;
+    padding: 8px;
+    padding: 8px;
+    width: 190px;
+}
+
+.head{
+    margin-bottom: 30px;
+}
