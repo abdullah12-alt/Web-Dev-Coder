@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(0, 0, 0, 0.753);
+}
+.header{
+    background-color: #ffcc00;
+    text-align: center;
+    padding: 20px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* https://getcssscan.com/css-box-shadow-examples */
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;    
+  
+
+}
+h1{
+    font-size: 2.5rem;
+}
+
+
+.add-pokemon{
+    margin-top: 20px;
+    text-align: center;
+}
+.add-pokemon input{
+    padding: 10px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.add-pokemon button{
+    padding: 10px 15px;
+    background-color: #ffcc00;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    
+}
+#pokemon-list{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.pokemon{
+    padding: 30px ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 10px;
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.image{
+    background-image: url("pexels-carocastilla-1716861.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
