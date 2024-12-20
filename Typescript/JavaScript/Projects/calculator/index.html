@@ -3,39 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Pokémon World</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .pokemon {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+
+        .pokemon img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .pokemon h3 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+
+        .add-pokemon {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .add-pokemon input {
+            padding: 10px;
+            font-size: 1rem;
+            margin-right: 10px;
+        }
+
+        .add-pokemon button {
+            padding: 10px 15px;
+            font-size: 1rem;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .add-pokemon button:hover {
+            background-color: #e6b800;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <div class="cal-form">
-            <form action="">
-                <div class="head">
-                    <h1>Calculator</h1>
-                </div>
-                <div class="inputs-field">
-                    <label for="">Enter Number</label>
-                    <input type="number" id="value1" placeholder="Enter Number">
-                </div>
-                <div class="inputs-field">
+    <header>
+        <h1>Welcome to Pokémon World</h1>
+    </header>
 
-                <label for="">Enter Number</label>
-                <input type="number" id="value2" placeholder="Enter Number">
-               </div>
-               <div class="operation">
-                <select  id="operation">
-                    <option value="Add">Add</option>
-                    <option value="Mul">Multiply</option>
-                    <option value="Sub">Sub</option>
-                </select>
-               </div>
-               <button onclick="Calculate()">Calculate</button>
-             <div class="output"><p></p></div>
-            </form>
-           </div>
+    <div class="container">
+        <div id="pokemon-list">
+            <!-- Pokémon cards will be added here dynamically -->
+        </div>
+
+        <div class="add-pokemon">
+            <input type="text" id="pokemon-name" placeholder="Enter Pokémon name" />
+            <button onclick="addPokemon()">Add Pokémon</button>
+        </div>
     </div>
 
-    <script src="script.js"></script>
-    
+    <script>
+        const pokemonList = document.getElementById('pokemon-list');
+
+        function addPokemon() {
+            const nameInput = document.getElementById('pokemon-name');
+            const pokemonName = nameInput.value.trim();
+
+            if (pokemonName) {
+                const pokemonCard = document.createElement('div');
+                pokemonCard.className = 'pokemon';
+
+                pokemonCard.innerHTML = `
+                    <h3>${pokemonName}</h3>
+                    <img src="https://via.placeholder.com/60" alt="${pokemonName}" />
+                `;
+
+                pokemonList.appendChild(pokemonCard);
+
+                // Clear the input field
+                nameInput.value = '';
+            } else {
+                alert('Please enter a Pokémon name!');
+            }
+        }
+    </script>
 </body>
 </html>
